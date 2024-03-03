@@ -1,25 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import Navbar from './navigation/Navbar';
+import HomePage from "./pages/HomePage";
+import ProjectPage from "./pages/ProjectPage";
+import AboutPage from "./pages/AboutPage";
+import "./index.css";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <div className="relative">
+            <div className="z-50 sticky top-0 inset-0">
+                <Navbar />
+            </div>
+            <div className="-mt-24">
+                <HomePage />
+            </div>
+            <ProjectPage />
+            <AboutPage />;
+        </div>
+    )
 }
 
 export default App;
