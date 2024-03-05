@@ -10,17 +10,16 @@ function ProjectDisplay({
 }) {
     const { refMap } = useContext(RefContext);
     const valueForRef = refMap.get("Project");
-    console.log(refMap.get("navbar"));
     const [hovering, changeHovering] = useState(false);
     const handleHoverChange = (event) => {
         changeHovering(!hovering);
     }
 
-        const textClassAll = "absolute top-0 items-center h-full w-full flex p-8 flex-col";
-        let textClassName = textClassAll + " text-darkest-blue text-2xl font-bold";
-        let textClassDescription = textClassAll + " text-cream text-sm font-semi-bold pb-24 justify-end";
-
+    const textClassAll = "absolute top-0 items-center h-full w-full flex p-8 flex-col";
+    let textClassName = textClassAll + " text-darkest-blue text-2xl font-bold";
+    let textClassDescription = textClassAll + " text-cream text-sm font-semi-bold pb-24 justify-end";
     let textClassBG = "";
+    
     if(hovering) {
         textClassName += " backdrop-blur-sm";
         textClassBG += " brightness-75";

@@ -34,7 +34,7 @@ function Navbar() {
 
     const scrollToSection = (section) => {// makes sure that we always know the user's scroll position
         window.scrollTo({
-            top: section.current.offsetTop - refMap.get("navbar"),
+            top: section.current.offsetTop,
             behavior: 'smooth'
         })
     } 

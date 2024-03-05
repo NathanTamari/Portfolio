@@ -4,6 +4,7 @@ import RefContext from '../context/RefContext';
 import backdrop from '../pics/mountains6.jpeg';
 import taskmanager from '../pics/task-manager.gif';
 import budgetCreater from '../pics/budget-Creater.gif';
+import "./ProjectPage.css";
 
 function ProjectPage() {
     const { refMap, appendPageRef } = useContext(RefContext);
@@ -17,43 +18,40 @@ function ProjectPage() {
     
     return (
         <div ref={valueForRef}>
-            <h1 className="absolute w-full text-center z-20 text-xl text-black font-extrabold">
-                Projects
-            </h1>
+            <div className="relative">
+                <img src={backdrop} 
+                    alt="Backdrop"
+                    className='w-full min-h-screen object-cover z-0' 
+                />    
+                
+                <div className='absolute top-0 gap-16 pt-20 p-10 grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 z-10 overflow-y-scroll max-h-[calc(100%)]'>
+                    <ProjectDisplay 
+                        projectGif={taskmanager}
+                        name="Task Manager"
+                        description="Project that allows you to add, edit, delete, and sort tasks that you 
+                        create. You can mark them as done, set and change due dates, priority levels, descriptions and names."
+                    />
 
-            <img src={backdrop} 
-                alt="Backdrop"
-                className='absolute w-full min-h-screen object-cover z-0' 
-            />    
-            
-            <div className='relative gap-16 p-10 grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 z-10'>
-                <ProjectDisplay 
-                    projectGif={taskmanager}
-                    name="Task Manager"
-                    description="Project that allows you to add, edit, delete, and sort tasks that you 
-                    create. You can mark them as done, set and change due dates, priority levels, descriptions and names."
-                />
+                    <ProjectDisplay 
+                        projectGif={budgetCreater}
+                        name="Net Worth Growth Calculator"
+                        description="About
+                        Calculator used to determine how many years it will take to reach a given financial goal given 6 different factors (made using Java swing)"
+                    />
 
-                <ProjectDisplay 
-                    projectGif={budgetCreater}
-                    name="I show speed"
-                    description="I smoke weed"
-                />
+                    <ProjectDisplay
+                        projectGif={budgetCreater}
+                        name="TBA"
+                    />
 
-                <ProjectDisplay
-                    projectGif={budgetCreater}
-                    name=" My friend, Darren Jason Watkins Jr."
-                    description="ishowspeed does backflip."
-                />
-
-                <ProjectDisplay 
-                    projectGif={budgetCreater}
-                    name="I show speed"
-                    description="I smoke weed"
-                />
+                    <ProjectDisplay 
+                        projectGif={budgetCreater}
+                        name="TBA"
+                    />
+                </div>
             </div>
         </div>
-    )
+        )
 }
 
 export default ProjectPage;

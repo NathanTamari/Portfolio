@@ -10,11 +10,14 @@ function App() {
             <div className="z-50 sticky top-0 inset-0">
                 <Navbar />
             </div>
-            <div className="-mt-24">
+            <div className="-mt-16">
                 <HomePage />
             </div>
             <ProjectPage />
-            <AboutPage />;
+
+            <div className=''>
+                <AboutPage />
+            </div>
         </div>
     )
 }
