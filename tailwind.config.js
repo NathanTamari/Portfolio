@@ -11,6 +11,7 @@ module.exports = {
         'darkish-blue': '#274D83',
         'cream': '#dddddc',
         'bermuda': '#78dcca',
+        'pinkish': '#FDD9C8',
       },
     },
   },
