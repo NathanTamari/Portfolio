@@ -4,8 +4,11 @@ import RefContext from '../context/RefContext';
 import backdrop from '../pics/mountains6.jpeg';
 import taskmanager from '../pics/task-manager.gif';
 import budgetCreater from '../pics/budget-Creater.gif';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 function ProjectPage() {
+    AOS.init();
     const { refMap, appendPageRef } = useContext(RefContext);
     const valueForRef = refMap.get("Projects");
 
@@ -24,7 +27,7 @@ function ProjectPage() {
                 />    
                 
                 <div className='absolute top-0 gap-16 pt-20 p-10 grid sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 z-10 overflow-y-scroll max-h-[calc(100%)]'>
-                    <div className="cursor-pointer">
+                    <div className="cursor-pointer" data-aos="fade-right" data-aos-duration="1500">
                         <ProjectDisplay 
                             projectGif={taskmanager}
                             name="Task Manager"
@@ -35,7 +38,7 @@ function ProjectPage() {
                         />
                     </div>
 
-                    <div className="cursor-pointer">
+                    <div className="cursor-pointer" data-aos="fade-up" data-aos-duration="1500">
                         <ProjectDisplay 
                             projectGif={budgetCreater}
                             name="Net Worth Growth Calculator"
@@ -43,20 +46,9 @@ function ProjectPage() {
                             Calculator used to determine how many years it will take to reach a given financial goal given 6 different factors (made using Java swing)"
                             languages={[
                                 { lang: "Java", p: 100, color: "bg-orange-300" },
-
                             ]}
                         />
                     </div>
-{/* 
-                    <ProjectDisplay
-                        projectGif={budgetCreater}
-                        name="TBA"
-                    />
-
-                    <ProjectDisplay 
-                        projectGif={budgetCreater}
-                        name="TBA"
-                    /> */}
                 </div>
             </div>
         </div>

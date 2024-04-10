@@ -19,10 +19,7 @@ function AboutPage() {
                         <source src={snowvid} type="video/mp4" />
                     </video>
                 </div>
-                
             </div>
-
         )
 }
-
 export default AboutPage;

@@ -2,19 +2,14 @@ import { useState, useContext } from "react";
 import RefContext from "../context/RefContext";
 import BarGraph from "./BarGraph";
 
-function ProjectDisplay({
-    projectGif,
-    name, 
-    description, 
-    languages,
-    link
-}) {
+function ProjectDisplay({ projectGif, name, description, languages}) {
     const { refMap } = useContext(RefContext);
     const valueForRef = refMap.get("Project");
     const [hovering, changeHovering] = useState(false);
-    const handleHoverChange = (event) => {
+    const handleHoverChange = () => {
         changeHovering(!hovering);
     }
+    
     languages.sort(function(a,b) {return b.p-a.p}); // sorts the array of information highest to lowest % content
 
     const textClassAll = "absolute top-0 items-center h-full w-full flex p-1 flex-col xl:p-8";
@@ -25,10 +20,10 @@ function ProjectDisplay({
     
     if(hovering) {
         textClassName += " backdrop-blur-sm";
-        textClassBG += " brightness-75";
+        textClassBG += " brightness-75 rounded";
     }
 
-    const handleClick = () => {
+    const handleClick = () => { // opens window in a new tab
         window.open(`/IndividualProject/${name}`, '_blank');
     }
 
@@ -39,25 +34,16 @@ function ProjectDisplay({
         onClick={handleClick}
         ref={valueForRef}
         > 
-            <img 
-                src={projectGif} 
-                alt="GIF of project"
-                className={textClassBG}
-            />
-
-            <h2 className= {textClassName}> 
-                {hovering && name}
-            </h2>
-
-            <p className={textClassDescription}>
-                {hovering && description}
-            </p>
+            <img src={projectGif} alt="GIF of project" className={textClassBG} />
+            <h2 className= {textClassName}>{hovering && name}</h2>
+            <p className={textClassDescription}> {hovering && description} </p>
 
             <div className={textClassBarGraph}>
                 {hovering && 
                 <BarGraph languages={languages} />
                 }
             </div>
+
         </div>
     );
 }
