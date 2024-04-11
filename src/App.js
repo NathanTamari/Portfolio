@@ -12,7 +12,7 @@ function App() {
     return (    
         <Router>
             <Routes>
-                    <Route exact path='/Portfolio' element={
+                    <Route exact path='/' element={
                         <div className="relative">
                             <div className="z-50 sticky top-0 inset-0"> <Navbar /> </div>
                             <div className="-mt-20 min-w-screen border-b-8  border-black"> <HomePage /> </div>
