@@ -24,7 +24,7 @@ function ProjectDisplay({ projectGif, name, description, languages}) {
     }
 
     const handleClick = () => { // opens window in a new tab
-        window.open(`/IndividualProject/${name}`, '_blank');
+        window.open(`/#/IndividualProject/${name}`, '_blank');
     }
 
     return (
