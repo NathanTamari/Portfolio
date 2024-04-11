@@ -1,14 +1,18 @@
-import { useLocation } from 'react-router-dom';
+import { useRoute } from 'wouter';
 import IndividualProjectPage from '../pages/IndividualProjectPage';
 
 function IndividualProject() {
-    const location = useLocation();
-    let projectName = location.pathname.substring('/IndividualProject/'.length);
-    projectName = projectName.replace(/%20/g, " ");
+    const [match, params] = useRoute("/IndividualProject/:projectName");
+    const { projectName } = params;
+    const decodedName = decodeURIComponent(projectName);
 
+    if (!match) {
+        return null;
+    }
+    
     return (
         <div>
-            <IndividualProjectPage name={projectName}/>
+            <IndividualProjectPage name={decodedName}/>
         </div>
     );
 }
