@@ -13,6 +13,10 @@ module.exports = {
         'bermuda': '#78dcca',
         'pinkish': '#FDD9C8',
       },
+      backgroundColor: {
+        'cream': '#ededed',
+        'darkish-blue': '#274D83',
+      },
     },
   },
   plugins: [],

@@ -2,6 +2,7 @@ import { useState, useContext } from "react";
 import RefContext from "../context/RefContext";
 import BarGraph from "./BarGraph";
 
+
 function ProjectDisplay({ projectGif, name, description, languages}) {
     const { refMap } = useContext(RefContext);
     const valueForRef = refMap.get("Project");
@@ -17,10 +18,10 @@ function ProjectDisplay({ projectGif, name, description, languages}) {
     let textClassDescription = textClassAll + " text-cream text-sm font-semi-bold top-0 justify-center md:px-16 md:text-lg";
     let textClassBarGraph = textClassAll + " justify-end pb-2 md:p-16";
     let textClassBG = "";
-    
+     
     if(hovering) {
         textClassName += " backdrop-blur-sm";
-        textClassBG += " brightness-75 rounded";
+        textClassBG += " brightness-75";
     }
 
     const handleClick = () => { // opens window in a new tab

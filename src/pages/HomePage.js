@@ -18,7 +18,7 @@ function HomePage() {
             <div data-aos="fade-up"
                 data-aos-anchor-placement="bottom-bottom"
                 data-aos-duration="1500"
-                className="absolute top-0 w-full text-center text-xl pt-52 font-extrabold" >
+                className="absolute top-0 w-full text-center text-xl pt-36 font-extrabold" >
                 <h1>nathantamari.com</h1>
             </div>
         </div>

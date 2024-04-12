@@ -1,6 +1,5 @@
 import { useContext, useEffect } from "react";
 import RefContext from '../context/RefContext';
-import pic1 from '../pics/mountains6.jpeg'
 
 function ContactPage() {
     const { refMap, appendPageRef } = useContext(RefContext);
@@ -12,11 +11,11 @@ function ContactPage() {
     }, [valueForRef])
 
     return (
-        <div ref={valueForRef}>
-             <img src={pic1} 
-                    alt="Backdrop"
-                    className='w-full min-h-screen object-cover z-0' 
-                />    
+        <div ref={valueForRef} className="bg-cream min-h-screen">
+            <div className="top-0 w-full bg-cream text-center lg:text-3xl md:text-2xl sm:text-xl lg:pt-20 sm:pt-8">
+                    <h1>Contact:</h1>
+                    <h3 className="text-yellow-500">under construction</h3>
+            </div>
         </div>
     );
 }
