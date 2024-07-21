@@ -21,7 +21,7 @@ function ProjectPage() {
         <div ref={valueForRef}>
             <div className="relative bg-cream min-h-screen">
                 <div className="top-0 w-full text-center lg:text-3xl md:text-2xl sm:text-xl pt-20" data-aos="zoom-in-up" data-aos-duration="1500" data-aos-easing="ease-out-cubic">
-                    <h1>Projects</h1>
+                    <h1 className="font-bold">Projects</h1>
                 </div>
                 <div className='top-0 gap-16 pt-20 p-10 grid sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 z-10 overflow-y-scroll max-h-[calc(100%)]'>
                     <div className="cursor-pointer" data-aos="fade-right" data-aos-easing="ease-out-cubic" data-aos-delay="500" data-aos-duration="750">
@@ -42,7 +42,7 @@ function ProjectPage() {
                             description="About
                             Calculator used to determine how many years it will take to reach a given financial goal given 6 different factors (made using Java swing)"
                             languages={[
-                                { lang: "Java", p: 100, color: "bg-orange-300" },
+                                { lang: "Java", p: 100, color: "bg-orange-300" }
                             ]}
                         />
                     </div>

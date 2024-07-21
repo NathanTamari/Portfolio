@@ -21,6 +21,7 @@ function Navbar() {
     });
 
     const home = useRef(null);
+    const experience = useRef(null);
     const projects = useRef(null);
     const education = useRef(null);
     const skills = useRef(null);
@@ -31,12 +32,13 @@ function Navbar() {
     useEffect(() => { // to prevent infinite loop, we map the current page height onto a map in context
         //so that other components can access it
         appendPageRef("Home", home);
+        appendPageRef("Experience", experience)
         appendPageRef("Projects", projects);
         appendPageRef("Education", education); 
         appendPageRef("Skills", skills);
         appendPageRef("Contact", contact)
         appendPageRef("navbar", navbar.current.offsetHeight);// eslint-disable-next-line
-    }, [home, projects, education, skills, contact]);
+    }, [home, experience, projects, education, skills, contact]);
 
 
     const scrollToSection = (section) => {// makes sure that we always know the user's scroll position
@@ -47,6 +49,7 @@ function Navbar() {
     } 
 
     // retreives the height at which each tab is stored at
+    const experienceHeight = refMap.get("Experience-Height");
     const educationHeight = refMap.get("Education-Height");
     const projectsHeight = refMap.get("Projects-Height");
     const skillsHeight = refMap.get("Skills-Height");
@@ -54,6 +57,7 @@ function Navbar() {
 
     // sets default class names for tailwind that we later add on to given certain scenarios, like user hovering
     let homeClassName = "inline-block mr-4 cursor-pointer"
+    let experienceClassName = "inline-block mr-4 cursor-pointer"
     let projectsClassName = "inline-block mr-4 cursor-pointer"
     let educationClassName = "inline-block mr-4 cursor-pointer"
     let skillsClassName = "inline-block mr-4 cursor-pointer"
@@ -70,6 +74,8 @@ function Navbar() {
         projectsClassName += " font-bold text-black";
     } else if (currentScrollPosition >= educationHeight && currentScrollPosition < skillsHeight) {
         educationClassName += " font-bold text-black";
+    } else if (currentScrollPosition >= experienceHeight && currentScrollPosition < projectsHeight) {
+        experienceClassName += " font-bold text-black";
     } else {
         homeClassName += " font-bold text-black";
     }
@@ -78,6 +84,7 @@ function Navbar() {
         <div className="flex flex-row text-white place-items-center place-content-center font-mono z-50 lg:text-xl h-16 md:text-lg sm:text-md" ref={navbar}>
             <ul>
                 <li className={homeClassName} onClick={() => scrollToSection(home)}>Home</li>
+                <li className={experienceClassName} onClick={() => scrollToSection(experience)}>Experience</li>
                 <li className={projectsClassName} onClick={() => scrollToSection(projects)}>Projects</li>
                 <li className={educationClassName} onClick={() => scrollToSection(education)}>Education</li>
                 <li className={skillsClassName} onClick={() => scrollToSection(skills)}>Skills</li>
