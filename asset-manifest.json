@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.4a2741ee.css",
-    "main.js": "/static/js/main.e4cf6666.js",
+    "main.css": "/static/css/main.7a0cee7c.css",
+    "main.js": "/static/js/main.428dec8d.js",
     "static/media/task-manager.gif": "/static/media/task-manager.a4f0de76246b43f38b8a.gif",
     "static/media/mountains4.mp4": "/static/media/mountains4.c6bd8e93e9ac529a2d3b.mp4",
     "static/media/budget-Creater.gif": "/static/media/budget-Creater.5bb25052a6ca33a7b774.gif",
@@ -11,13 +11,19 @@
     "static/media/proj1-2.png": "/static/media/proj1-2.268440eabbd9a42bd428.png",
     "static/media/proj1-3.png": "/static/media/proj1-3.caa2da825b7c68c233e2.png",
     "static/media/proj2-1.png": "/static/media/proj2-1.6341ba3fd01cfa19360f.png",
+    "static/media/pythonimg.png": "/static/media/pythonimg.82efb64f8698a267f8bf.png",
     "static/media/proj1-1.png": "/static/media/proj1-1.5d2b7ec947f28c83d56f.png",
+    "static/media/reactpng.png": "/static/media/reactpng.587e4f585edf280cf37b.png",
+    "static/media/sqlpng.png": "/static/media/sqlpng.51168a7905313744fc1c.png",
+    "static/media/Clogo.png": "/static/media/Clogo.837a49116fe3c020f47d.png",
+    "static/media/AXALogo.png": "/static/media/AXALogo.42622cc50165c94345bc.png",
+    "static/media/databrickspng.png": "/static/media/databrickspng.c4ca3a973ad7d08e9ae9.png",
     "index.html": "/index.html",
-    "main.4a2741ee.css.map": "/static/css/main.4a2741ee.css.map",
-    "main.e4cf6666.js.map": "/static/js/main.e4cf6666.js.map"
+    "main.7a0cee7c.css.map": "/static/css/main.7a0cee7c.css.map",
+    "main.428dec8d.js.map": "/static/js/main.428dec8d.js.map"
   },
   "entrypoints": [
-    "static/css/main.4a2741ee.css",
-    "static/js/main.e4cf6666.js"
+    "static/css/main.7a0cee7c.css",
+    "static/js/main.428dec8d.js"
   ]
 }
