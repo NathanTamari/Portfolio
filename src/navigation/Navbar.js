@@ -81,7 +81,7 @@ function Navbar() {
     }
 
     return <div className="bg-gray-500/30 backdrop-blur border-b-8 border-blue-800">
-        <div className="flex flex-row text-white place-items-center place-content-center font-mono z-50 lg:text-xl h-16 md:text-lg sm:text-md" ref={navbar}>
+        <div className="flex flex-row text-white place-items-center text-center place-content-center font-mono z-50 lg:text-xl h-16 md:text-lg sm:text-sm" ref={navbar}>
             <ul>
                 <li className={homeClassName} onClick={() => scrollToSection(home)}>Home</li>
                 <li className={experienceClassName} onClick={() => scrollToSection(experience)}>Experience</li>
