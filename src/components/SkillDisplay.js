@@ -11,7 +11,6 @@ function SkillDisplay({ png }) {
     }
     if (hovering) {
         classNameImg = "w-16 sm:w-28 md:w-32 lg:w-40 xl:w-48"
-        animationName = 'zoom-out'
     }
 
     return (

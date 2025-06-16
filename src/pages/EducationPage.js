@@ -18,7 +18,7 @@ function EducationPage() {
                     <div className="top-0 w-full bg-cream text-center lg:text-3xl md:text-2xl sm:text-xl lg:pt-20 sm:pt-8" data-aos="fade-down" data-aos-duration="700" data-aos-easing="ease-out-cubic">
                         <h1 className="font-bold">Education</h1>
                     </div>
-                <div className= "relative flex justify-center items-center min-h-96 min-w-96 max-h-min bg-gray-300 m-24 rounded-3xl" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="500">
+                <div className= "relative flex justify-center items-center min-h-96 min-w-96 max-h-min bg-blue-200 m-24 rounded-3xl" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="500">
                     <img src={UMDpic} alt="UMD logo" className="max-h-48 left-0 m-6"/>
                     <div className="flex-col m-6 lg:text-lg" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="800">
                         <h1 className=" top-0 font-bold lg:text-xl">B.S. Computer Science</h1>
