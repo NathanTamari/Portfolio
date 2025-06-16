@@ -39,7 +39,7 @@ function ExperiencePage() {
                         </div>
 
                         <div className="relative pl-10">
-                       <div className="absolute left-3 top-1 w-2.5 h-2.5 bg-gray-600 rounded-full z-10"></div>
+                       <div className="absolute left-3 top-1 w-2.5 h-2.5 bg-gray-500 rounded-full z-10"></div>
                             <h1 className=" top-0 font-bold lg:text-xl">Cybersecurity Underwriting Intern</h1>
                             <h3 className="text-xl italic">June 2025 - August 2025 | New York, New York</h3>
                             <div className="text-xs sm:text-sm md:text-md lg:text-lg">
