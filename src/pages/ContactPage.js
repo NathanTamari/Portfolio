@@ -58,7 +58,7 @@ function ContactPage() {
                                 <label>Email</label>
                                 <input type="email" name="user_email" size={30} className="bg-gray-200 text-md p-2"  />
                             </div>
-
+g
                             <div className="m-10 space-x-4 flex items-center"> 
                                 <label>Message</label>
                                 <textarea name="message" className="bg-gray-200 text-sm w-[300px] p-5"/>
