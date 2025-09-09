@@ -80,7 +80,8 @@ function Navbar() {
         homeClassName += " font-bold text-black";
     }
 
-    return <div className="bg-gray-500/30 backdrop-blur border-b-8 border-blue-800">
+    return <div className="sticky top-0 bg-gray-500/30 backdrop-blur border-b-8 border-blue-800 z-50">
+
         <div className="flex flex-row text-white place-items-center text-center place-content-center font-mono z-50 lg:text-xl h-16 md:text-lg sm:text-sm" ref={navbar}>
             <ul>
                 <li className={homeClassName} onClick={() => scrollToSection(home)}>Home</li>

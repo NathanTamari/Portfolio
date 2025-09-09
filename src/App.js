@@ -17,12 +17,14 @@ function App() {
                     <>
                         <div className='relative'>
                             <div className="z-50 sticky top-0 inset-0"> <Navbar /> </div>
-                            <div className="-mt-20 min-w-screen border-b-[12px] border-blue-900"> <HomePage /> </div>
-                            <ExperiencePage />
-                            <ProjectPage />
-                            <EducationPage />
-                            <SkillsPage />
+                                <div className="-mt-20 min-w-screen border-b-[12px] border-blue-900"> <HomePage /> </div>
+                                 <div className="overflow-x-hidden">
+                                <ExperiencePage />
+                                <ProjectPage />
+                                <EducationPage />
+                                <SkillsPage />
                             <ContactPage />
+                            </div>
                         </div>
                     </>
                 } />
