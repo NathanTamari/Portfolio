@@ -1,10 +1,14 @@
 {
   "files": {
-    "main.css": "/static/css/main.b8cf45f3.css",
-    "main.js": "/static/js/main.1d5015a1.js",
+    "main.css": "/static/css/main.0cbcc28e.css",
+    "main.js": "/static/js/main.5b44db34.js",
+    "static/media/forthefreeski.gif": "/static/media/forthefreeski.ccd3a7f30ed134dddfd7.gif",
     "static/media/task-manager.gif": "/static/media/task-manager.a4f0de76246b43f38b8a.gif",
     "static/media/mountains4.mp4": "/static/media/mountains4.c6bd8e93e9ac529a2d3b.mp4",
     "static/media/budget-Creater.gif": "/static/media/budget-Creater.5bb25052a6ca33a7b774.gif",
+    "static/media/proj3-2.png": "/static/media/proj3-2.debbe705087a41b557fe.png",
+    "static/media/proj3-3.png": "/static/media/proj3-3.9b67e155290ef1000a1a.png",
+    "static/media/proj3-1.png": "/static/media/proj3-1.0fa8ff9e18444eb6c1d8.png",
     "static/media/umdpng.png": "/static/media/umdpng.b8269d0cd2dc6e534b90.png",
     "static/media/proj2-3.png": "/static/media/proj2-3.cb0208c9c12e4f39af8e.png",
     "static/media/proj2-2.png": "/static/media/proj2-2.0641b4917dad3b9bf880.png",
@@ -19,11 +23,11 @@
     "static/media/AXALogo.png": "/static/media/AXALogo.42622cc50165c94345bc.png",
     "static/media/databrickspng.png": "/static/media/databrickspng.c4ca3a973ad7d08e9ae9.png",
     "index.html": "/index.html",
-    "main.b8cf45f3.css.map": "/static/css/main.b8cf45f3.css.map",
-    "main.1d5015a1.js.map": "/static/js/main.1d5015a1.js.map"
+    "main.0cbcc28e.css.map": "/static/css/main.0cbcc28e.css.map",
+    "main.5b44db34.js.map": "/static/js/main.5b44db34.js.map"
   },
   "entrypoints": [
-    "static/css/main.b8cf45f3.css",
-    "static/js/main.1d5015a1.js"
+    "static/css/main.0cbcc28e.css",
+    "static/js/main.5b44db34.js"
   ]
 }
