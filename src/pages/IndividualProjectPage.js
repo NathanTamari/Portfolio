@@ -4,6 +4,9 @@ import proj1_3 from '../pics/proj1-3.png';
 import proj2_1 from '../pics/proj2-1.png';
 import proj2_2 from '../pics/proj2-2.png';
 import proj2_3 from '../pics/proj2-3.png';
+import proj3_1 from '../pics/proj3-1.png';
+import proj3_2 from '../pics/proj3-2.png';
+import proj3_3 from '../pics/proj3-3.png';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
@@ -18,6 +21,10 @@ function IndividualProjectPage ({ name }) {
         feature1 = proj2_1;
         feature2 = proj2_2;
         feature3 = proj2_3;
+    } else if (name === "ForTheFreeSki.com") {
+        feature1 = proj3_1
+        feature2 = proj3_2
+        feature3 = proj3_3
     }
 
     return (

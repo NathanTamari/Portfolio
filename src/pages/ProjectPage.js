@@ -3,6 +3,7 @@ import { useContext, useEffect } from "react";
 import RefContext from '../context/RefContext';
 import taskmanager from '../pics/task-manager.gif';
 import budgetCreater from '../pics/budget-Creater.gif';
+import FreeSkiGif from '../pics/forthefreeski.gif';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
@@ -39,10 +40,24 @@ function ProjectPage() {
                         <ProjectDisplay 
                             projectGif={budgetCreater}
                             name="Net Worth Growth Calculator"
-                            description="About
+                            description="
                             Calculator used to determine how many years it will take to reach a given financial goal given 6 different factors (made using Java swing)"
                             languages={[
                                 { lang: "Java", p: 100, color: "bg-orange-300" }
+                            ]}
+                        />
+                    </div>
+
+                    <div className="cursor-pointer" data-aos="fade-left" data-aos-easing="ease-out-cubic" data-aos-delay="1300" data-aos-duration="750">
+                        <ProjectDisplay 
+                            projectGif={FreeSkiGif}
+                            name="ForTheFreeSki.com"
+                            description="
+                            Full-stack web app that generates optimized ski trip packages (resorts, lodging, lift tickets) that integrates a machine learning model trained on 25,000+ Booking.com data points to predict pricing"
+                            languages={[
+                                { lang: "Javascript", p: 72.2, color: "bg-yellow-300"},
+                                    {lang: "CSS", p: 24, color: "bg-blue-400"},
+                                    {lang: "HTML", p: 3.8, color: "bg-purple-400"},
                             ]}
                         />
                     </div>
